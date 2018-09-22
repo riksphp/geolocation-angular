@@ -1,16 +1,21 @@
 # AngularGeolocation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This application will track your current address.
 
 ## Development server
 
 Run go.sh file.
-You will see your changes on : http://127.0.0.1:4200/
 
 OR
 
 Run npm install.
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. 
+
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+API used in this app is built on node server and can be found on below repository:
+https://github.com/riksphp/kml-polygon-parsing-with-node/
 
 ## Code scaffolding
 
