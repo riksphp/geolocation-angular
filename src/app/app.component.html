@@ -1,0 +1,42 @@
+
+<div class="container">
+    <h1>{{ title }}</h1>
+    <h3>Please enter your address. </h3>
+    <form (ngSubmit)="onSubmit()" #addressForm="ngForm">
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address"
+               required
+               [(ngModel)]="address" name="address"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Address is required
+        </div>
+      </div>
+ 
+      <button type="submit" class="btn btn-success"
+        [disabled]="!addressForm.form.valid">Submit</button>
+ 
+    </form>
+    <div class="box">
+      <h3>
+        Doesn't remeber the address.
+      </h3>
+      <button class="btn btn-primary" (click)="findMe()">Find me</button>
+    </div>
+
+    <div>
+      <h2>Output outlet details</h2>
+
+      <div>
+        Current coordinates: <br/>
+        <strong>Latitude:</strong> {{currentLat}} <br />
+        <strong>Longitude:</strong> {{currentLng}}
+      </div>
+
+      <div>
+        <strong>KLM data:</strong> {{outputData}}
+      </div>
+    </div>
+</div>
