@@ -1,7 +1,13 @@
 # AngularGeolocation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
-This application will track your current address.
+This application will let you know if any outlet is present in your address. Provide your current address or track your address. Using below API to check if any outlet is present:
+http://127.0.0.1:8000/api/outlet?lat=12.937340899999999&lng=77.7014441 
+
+
+API used in this app is built on node server and can be found on below repository:
+https://github.com/riksphp/kml-polygon-parsing-with-node/
+
 
 ## Development server
 
@@ -13,9 +19,6 @@ Run npm install.
 Run `ng serve` for a dev server. 
 
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-API used in this app is built on node server and can be found on below repository:
-https://github.com/riksphp/kml-polygon-parsing-with-node/
 
 ## Code scaffolding
 
